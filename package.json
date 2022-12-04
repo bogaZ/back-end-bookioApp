@@ -1,0 +1,58 @@
+{
+    "private": true,
+    "scripts": {
+        "test": "tape test/*.js",
+        "watch": "npm-watch",
+        "watch_android": "npm-watch run_android",
+        "watch_ios": "npm-watch run_ios",
+        "run_android": "tns run android --emulator",
+        "run_ios": "tns run ios --emulator"
+    },
+    "devDependencies": {
+        "axios": "^0.25",
+        "laravel-vite-plugin": "^0.2.1",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "vite": "^2.9.11"
+    },
+    "watch": {
+        "test": {
+            "patterns": [
+                "src",
+                "test"
+            ],
+            "extensions": "js,jsx",
+            "ignore": "src/vendor/external.min.js",
+            "quiet": true,
+            "legacyWatch": true,
+            "delay": 2500,
+            "runOnChangeOnly": false
+        },
+        "run_android": {
+            "patterns": [
+                "app"
+            ],
+            "extensions": "ts,html,scss",
+            "quiet": false
+        },
+        "run_ios": {
+            "patterns": [
+                "app"
+            ],
+            "extensions": "ts,html,scss",
+            "quiet": false
+        }
+    },
+    "scripts": {
+        "test": "tape test/*.js",
+        "watch": "npm-watch",
+        "watch_android": "npm-watch run_android",
+        "watch_ios": "npm-watch run_ios",
+        "run_android": "tns run android --emulator",
+        "run_ios": "tns run ios --emulator",
+        "test": "tape test/*.js"
+    },
+    "dependencies": {
+        "npm-watch": "^0.11.0"
+    }
+}

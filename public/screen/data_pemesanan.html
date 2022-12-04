@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+ <!-- Google Font: Source Sans Pro -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="../../../plugins/fontawesome-free/css/all.min.css">
+ <!-- DataTables -->
+ <link rel="stylesheet" href="../../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+ <link rel="stylesheet" href="../../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+ <link rel="stylesheet" href="../../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+ <!-- Theme style -->
+ <link rel="stylesheet" href="../../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+  
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="../dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+     
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">bookio Admin</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">
+                <i class="nav-icon far fa-solid fa-house"></i>
+              <p>
+                Home
+              </p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa-solid fa-users"></i>
+              <p>
+                Data Users
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="user_penyewa.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>User Penyewa</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="user_penyedia.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>User Penyedia</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="data_studio.html" class="nav-link">
+               <i class="nav-icon far fa-solid fa-microphone-lines"></i>
+              <p>
+                Data Studio
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="data_pemesanan.html" class="nav-link active">
+               <i class="nav-icon far fa-solid fa-cart-shopping"></i>
+              <p>
+                Data Pemesanan
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="data_transaksi.html" class="nav-link">
+               <i class="nav-icon far fa-solid fa-clipboard"></i>
+              <p>
+                Data Transaksi
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="data_withdraw.html" class="nav-link">
+               <i class="nav-icon far fa-solid fa-money-bill-transfer"></i>
+              <p>
+                Data Withdraw
+              </p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-solid fa-gear"></i>
+              <p>
+                Pengaturan
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="akun_admin.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Akun Admin</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pembayaran.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pembayaran</p>
+                </a>
+              </li>          
+            </ul>
+          </li>
+         
+         
+         
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Data Pemesanan</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Data Pemesanan</a></li>
+             
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              
+  
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">DataTable with default features</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                      <th>ID Transaksi</th>
+                      <th>Nama</th>
+                      <th>Studio</th>
+                      <th>Tanggal</th>
+                      <th>Total</th>
+                      <th>Status</th>
+                      <th>Aksi</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>bko22Jun220kkjh</td>
+                      <td>Budi Hariyanto</td>
+                      <td>Omexo Studio</td>
+                      <td>2022/09/09</td>
+                      <td>Rp. 50.000</td>
+                      <td style="color: red;">Menunggu Pembayaran</td>
+                      <td style="width: 137px;">
+                      
+                          <button data-toggle="modal" data-target="#modal-cek" type="button" class="btn btn-warning "> <i class="fa-solid fa-images" style="color: white;"></i> </button>
+                        <button data-toggle="modal" data-target="#modal-default" type="button" class="btn btn-success "> <i class="fa-solid fa fa-check-circle"  style="color: white;"></i> </button>
+                        <button data-toggle="modal" data-target="#modal-detail" type="button" class="btn btn-primary "> <i class="fa-regular fa-eye" style="color: white;"></i> </button>
+                        
+                        
+                
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>bko22Jun220kkjh</td>
+                      <td>Budi Hariyanto</td>
+                      <td>Omexo Studio</td>
+                      <td>2022/09/09</td>
+                      <td>Rp. 50.000</td>
+                      <td style="color: green;">Berhasil</td>
+                      <td style="width: 137px;">
+                      
+                        <button data-toggle="modal" data-target="#modal-cek" type="button" class="btn btn-warning "> <i class="fa-solid fa-images" style="color: white;"></i> </button>
+                        
+                        <button id="myBtn" data-toggle="modal" data-target="#modal-default" type="button" class="btn btn-success "> <i class="fa-solid fa fa-check-circle"  style="color: white;"></i> </button>
+                        <script>
+                          document.getElementById("myBtn").disabled = true;                          
+                        </script>
+                        
+                        <button data-toggle="modal" data-target="#modal-detail" type="button" class="btn btn-primary " > <i class="fa-regular fa-eye" style="color: white;"></i> </button>
+                       
+                        
+                
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>bko22Jun220kkjh</td>
+                      <td>Budi Hariyanto</td>
+                      <td>Omexo Studio</td>
+                      <td>2022/09/09</td>
+                      <td>Rp. 50.000</td>
+                      <td style="color: blue;">Menunggu Konfirmasi</td>
+                      <td style="width: 137px;">
+                      
+                        <button data-toggle="modal" data-target="#modal-cek" type="button" class="btn btn-warning "> <i class="fa-solid fa-images" style="color: white;"></i> </button>
+                        
+                        <button id="myBtn" data-toggle="modal" data-target="#modal-default" type="button" class="btn btn-success "> <i class="fa-solid fa fa-check-circle"  style="color: white;"></i> </button>
+                        <script>
+                          $data = "Dibatalkan";
+                          if($data == "Dibatalkan"){
+                            document.getElementById("myBtn").disabled = true;
+                          }
+                                                    
+                        </script>
+                        
+                        <button data-toggle="modal" data-target="#modal-detail" type="button" class="btn btn-primary " > <i class="fa-regular fa-eye" style="color: white;"></i> </button>
+
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>bko22Jun220kkjh</td>
+                      <td>Budi Hariyanto</td>
+                      <td>Omexo Studio</td>
+                      <td>2022/09/09</td>
+                      <td>Rp. 50.000</td>
+                      <td style="color: red;">Dibatalkan</td>
+                      <td style="width: 137px;">
+                      
+                        <button data-toggle="modal" data-target="#modal-cek" type="button" class="btn btn-warning "> <i class="fa-solid fa-images" style="color: white;"></i> </button>
+                        
+                        <button  id="myBtn1" data-toggle="modal" data-target="#modal-default" type="button" class="btn btn-success "> <i class="fa-solid fa fa-check-circle"  style="color: white;"></i> </button>
+                        <script>
+                          
+                          $data = "Dibatalkan";
+                          if($data == "Dibatalkan"){
+                            document.getElementById("myBtn1").disabled = true;
+                          }
+
+                          
+                           
+
+                                                    
+                        </script>
+                        
+                        <button   data-toggle="modal" data-target="#modal-detail" type="button" class="btn btn-primary " > <i class="fa-regular fa-eye" style="color: white;"></i> </button>
+
+                      </td>
+                    </tr>
+                    </tbody>
+                    
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+        </div>
+
+        <!-- modal konfirmasi pembayaran -->
+        <div class="modal fade" id="modal-default">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 id="konfirmasi" class="modal-title">Konfirmasi Pembayaran...?</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" data-dismiss="modal"  class="btn btn-success">Konfirmasi</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- modal batalkan pemesanan -->
+        <div class="modal fade" id="modal-batal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Batalkan Pemesanan...?</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" data-dismiss="modal"  class="btn btn-danger">Batalkan Pemesanan</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- modal detail pemesanan -->
+        <div class="modal fade" id="modal-detail">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Detail Pemesanan</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h5 class="text-bold" sstyle="color:grey ;">Identitas</h5>
+                <table>
+                  <tr>
+                      <td style="color:grey ;" class="col-6"><i class="far fa-regular fa-user mr-1"></i>Nama</td>    
+                      <td style="color:grey ;" class="col-2"><i class="fa fa-phone mr-1"></i> Telepon</td>
+                  </tr>
+                  <tr>   
+                    <td  class="col-6 text-bold">Budi Harsono</td>    
+                    <td class="col-2 text-bold" > 089766544433</td>
+                  </tr>
+                </table>
+                <hr>
+                <h4 class="text-bold">Omexo Studio</h4>
+                <table>
+                <tr>
+                  <td>
+                    <div style="position:relative ;">
+                      <i class="fa-2x fas fa-location" style="color: orangered;position:absolute;"></i>
+                      <p class="ml-5">Jl Airlangga No. 15, Banyuwangi, Jawa Timur</p>
+                    </div>
+                  </td>
+                </tr>
+                </table>
+                <hr>
+                <table>
+                  <tr>
+                    <td class="col-6" style="color:grey ;"><i class=" fa-solid fa-credit-card mr-1"></i>ID Booking</td>    
+                    <td class="col-4" style="color:grey ;" ><i class="fa-solid fa-calendar-days"></i> Tanggal</td>
+                  </tr>
+                  <tr>   
+                    <td class="col-6 text-bold" style="color: black;">bko22Jun07098uh</td>    
+                    <td class="col-4 text-bold" > 2022/09/07</td>
+                  </tr>
+                  <tr style="height: 20px;"></tr>
+                  <tr>
+                    <td class="col-6" style="color:grey ;"><i class="fa-solid fa-bars mr-1"></i>Sewa Ruang</td>    
+                    <td class="col-4" style="color:grey ;"><i class="fa-solid fa-stopwatch"></i> Durasi</td>
+                  </tr>
+                  <tr>   
+                    <td class="col-6 text-bold" style="color: black;">Ruang 1</td>    
+                    <td class="col-4 text-bold">3 Jam (10:00-11:00)</td>
+                  </tr>
+                  <tr style="height: 20px;"></tr>
+                  <tr>
+                    <td class="col-6" style="color:grey ;"><i class="fa-solid fa-ticket-simple mr-1"></i>Status</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6 text-bold" style="color:red ;">Menunggu Pembayaran</td>
+                  </tr>
+                </table>
+                <hr>
+                <div>
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="text-bold">Rincian Biaya</h5>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col">
+                      Ruang 1
+                    </div>
+                    <div class="mr-2 text-bold">
+                      Rp. 100.000
+                    </div>    
+                  </div>
+                </div>
+                <hr style="margin-top: 5px ;">
+                <div class="row" style="margin-top: -10px ;">
+                  <div class="row col">
+                    <div class="col-1 mr-3 ">
+                      Total
+                    </div>
+                    <div style="color: grey;font-style:italic;">
+                      (Harga sudah termasuk PPN)
+                    </div>
+                  </div>
+                  <div class="mr-2 text-bold">
+                    Rp. 100.000
+                  </div>
+                </div>
+                <div style="height: 20px;"></div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- modal cek bukti pembayaran -->
+        <div class="modal fade" id="modal-cek">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Bukti Pembayaran</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=3" class="img-fluid" style="width: 100%;">
+              </div>
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <div>       
+                  <button data-dismiss="modal" data-toggle="modal" data-target="#modal-batal" type="button" class="btn btn-danger">Batalkan Pemesanan</button>         
+                  <button data-dismiss="modal" data-toggle="modal" data-target="#modal-default" type="button" class="btn btn-success">Konfirmasi</button>
+                
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+  
+    </section>
+    </div>
+      <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> 3.2.0
+      </div>
+    </footer>
+  
+ 
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  
+</div>
+<!-- ./wrapper -->
+<!-- jQuery -->
+<script src="../../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../../plugins/jszip/jszip.min.js"></script>
+<script src="../../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+<script src="https://kit.fontawesome.com/eda8884b8f.js" crossorigin="anonymous"></script>
+</body>
+</html>
