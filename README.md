@@ -15,7 +15,9 @@ _bookio merupakan project akhir saya selama menempuh pendidikan di bangku perkul
 
     `composer update`
 
-    `php artisan migrate --seed` _or_ `php artisan migrate:refresh --seed`
+    `php artisan migrate:refresh --seed`
+
+    `php artisan passport:install --force`
 
     `php artisan serve`
 
