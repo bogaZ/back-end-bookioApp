@@ -10,9 +10,13 @@ _bookio merupakan project akhir saya selama menempuh pendidikan di bangku perkul
 -   _Membuat file_ `.env`_lalu copy semua isi dari file_ `.env.example` _ke file_ `.env`
 -   _Configurasi_ `DB_DATABASE=laravel_bookio` _pada file_ `.env` _sesuai dengan nama database_
 -   _Buka terminal masuk ke folder_ **back-end-bookioApp** _dan jalankan perintah :_
+
     `composer update`
+
     `php artisan migrate`
+
     `php artisan serve`
+
 -   _Lalu akses aplikasi sesuai nama domain misal :_ http://localhost:8000/
 -   _Halaman website akan error dikarenakan anda harus meregenerate API Keys_
 -   **Generate API KEYS**
