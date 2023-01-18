@@ -5,7 +5,9 @@ _bookio merupakan project akhir saya selama menempuh pendidikan di bangku perkul
 ### Configurasi Back-End
 
 -   _Download project dengan cara buka terminal ketikan :_
+
     `git clone git@github.com:bogaZ/back-end-bookioApp.git`
+
 -   _Membuat database dengan nama bebas misal :_ **laravel_bookio**
 -   _Membuat file_ `.env`_lalu copy semua isi dari file_ `.env.example` _ke file_ `.env`
 -   _Configurasi_ `DB_DATABASE=laravel_bookio` _pada file_ `.env` _sesuai dengan nama database_
