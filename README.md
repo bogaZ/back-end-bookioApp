@@ -25,6 +25,6 @@ _bookio merupakan project akhir saya selama menempuh pendidikan di bangku perkul
 -   _Akses kembali website sesuai nama domain misal :_ http://localhost:8000/
 -   _Jika berhasil anda akan diarahkan ke login admin_
 -   _Login ke dashboard admin dengan menggunakan :_
--   _Username :_ **admin@gmail.com**
+-   _Username :_ **adminbookio@gmail.com**
 -   _Masuk ke pengaturan lalu tambahkan_ **Pembayaran**
 -   _Password :_ **12345678**

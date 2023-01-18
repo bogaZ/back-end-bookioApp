@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {   
+    {
 
         // //USER PENYEDIA
         // User::create([
@@ -45,7 +45,7 @@ class DatabaseSeeder extends Seeder
         // USER ADMIN
         User::create([
             'name' => 'admin',
-            'email' => 'admin@gmail.com',
+            'email' => 'adminbookio@gmail.com',
             'nomor_hp' => '456787656',
             'level' => 'Admin',
             'password' => bcrypt('12345678'),
@@ -105,9 +105,9 @@ class DatabaseSeeder extends Seeder
             'Jumlah' => 700000,
         ]);
 
-        $hari = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+        $hari = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-        for($i=0;$i < count($hari);$i++){
+        for ($i = 0; $i < count($hari); $i++) {
             $validateData['studio_id'] = 1;
             $validateData['nama_hari'] = $hari[$i];
             Jadwal::create($validateData);
