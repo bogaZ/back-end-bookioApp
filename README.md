@@ -20,10 +20,11 @@ _bookio merupakan project akhir saya selama menempuh pendidikan di bangku perkul
     `php artisan serve`
 
 -   _Lalu akses aplikasi sesuai nama domain misal :_ http://localhost:8000/
--   _Halaman website akan error dikarenakan anda harus meregenerate API Keys_
--   **Generate API KEYS**
+-   _Halaman website akan error dikarenakan anda harus meregenerate APP Keys_
+-   **Generate APP KEYS**
 -   _Akses kembali website sesuai nama domain misal :_ http://localhost:8000/
 -   _Jika berhasil anda akan diarahkan ke login admin_
 -   _Login ke dashboard admin dengan menggunakan :_
--   _Username :_ **adminbookio@gmail.com**
+-   _Username :_ **admin@gmail.com**
+-   _Masuk ke pengaturan lalu tambahkan_ **Pembayaran**
 -   _Password :_ **12345678**
