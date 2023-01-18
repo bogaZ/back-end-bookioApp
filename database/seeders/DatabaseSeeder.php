@@ -52,66 +52,66 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // PEMBAYARAN PENYEDIA
-        Pembayaran::create([
-            'user_id' => 2,
-            'nama_bank' => 'BNI',
-            'nomer_rekening' => '567876567',
-            'nama_pemilik' => 'Budianto',
-        ]);
+        // Pembayaran::create([
+        //     'user_id' => 2,
+        //     'nama_bank' => 'BNI',
+        //     'nomer_rekening' => '567876567',
+        //     'nama_pemilik' => 'Budianto',
+        // ]);
 
-        // SALDO
-        Saldo::create([
-            'pembayaran_id' => 1,
-            'jumlah' => 5000000,
-        ]);
+        // // SALDO
+        // Saldo::create([
+        //     'pembayaran_id' => 1,
+        //     'jumlah' => 5000000,
+        // ]);
 
-        // STUDIO PENYEDIA
-        Studio::create([
-            'user_id' => 2,
-            'nama_studio' => 'Green',
-            'alamat' => 'Banyuwangi',
-            'deskripsi' => 'keren',
-            'tarif_minimal' => 10000,
-            'tarif_maksimal' => 20000,
-        ]);
+        // // STUDIO PENYEDIA
+        // Studio::create([
+        //     'user_id' => 2,
+        //     'nama_studio' => 'Green',
+        //     'alamat' => 'Banyuwangi',
+        //     'deskripsi' => 'keren',
+        //     'tarif_minimal' => 10000,
+        //     'tarif_maksimal' => 20000,
+        // ]);
 
-        // FASILITAS 
-        Fasilitas::create([
-            'studio_id' => 1,
-            'nama_fasilitas' => 'Ruang Platinum',
-            'tarif' => 10000,
-        ]);
+        // // FASILITAS 
+        // Fasilitas::create([
+        //     'studio_id' => 1,
+        //     'nama_fasilitas' => 'Ruang Platinum',
+        //     'tarif' => 10000,
+        // ]);
 
-        Fasilitas::create([
-            'studio_id' => 1,
-            'nama_fasilitas' => 'Ruang Premium',
-            'tarif' => 20000,
-        ]);
+        // Fasilitas::create([
+        //     'studio_id' => 1,
+        //     'nama_fasilitas' => 'Ruang Premium',
+        //     'tarif' => 20000,
+        // ]);
 
-        Fasilitas::create([
-            'studio_id' => 1,
-            'nama_fasilitas' => 'Ruang Gold',
-            'tarif' => 30000,
-        ]);
+        // Fasilitas::create([
+        //     'studio_id' => 1,
+        //     'nama_fasilitas' => 'Ruang Gold',
+        //     'tarif' => 30000,
+        // ]);
 
-        // WITHDRAW
-        Withdraw::create([
-            'user_id' => 2,
-            'Jumlah' => 300000,
-        ]);
+        // // WITHDRAW
+        // Withdraw::create([
+        //     'user_id' => 2,
+        //     'Jumlah' => 300000,
+        // ]);
 
-        Withdraw::create([
-            'user_id' => 2,
-            'Jumlah' => 700000,
-        ]);
+        // Withdraw::create([
+        //     'user_id' => 2,
+        //     'Jumlah' => 700000,
+        // ]);
 
-        $hari = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        // $hari = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-        for ($i = 0; $i < count($hari); $i++) {
-            $validateData['studio_id'] = 1;
-            $validateData['nama_hari'] = $hari[$i];
-            Jadwal::create($validateData);
-        }
+        // for ($i = 0; $i < count($hari); $i++) {
+        //     $validateData['studio_id'] = 1;
+        //     $validateData['nama_hari'] = $hari[$i];
+        //     Jadwal::create($validateData);
+        // }
 
     }
 }
